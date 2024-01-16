@@ -17,7 +17,7 @@ env <- readRDS('data/env_log.RDS') %>%
 data <- env %>% 
   left_join(traits, by = 'sample')
   
-source('scripts/figures/custom_theme_functional_thesis.R')
+source('figures/custom_theme_functional_thesis.R')
 
 
 # 2. RESP1 ----
@@ -137,7 +137,7 @@ design <- "
 
 
 gg_stop_recording()
-ggsave(glmm2_final,file = 'figures/glmms2.png', dpi = 320, width = 30, height = 35, units = 'cm')
+ggsave(glmm2_final,file = 'glmms2.png', dpi = 320, width = 30, height = 35, units = 'cm')
 
 
 
