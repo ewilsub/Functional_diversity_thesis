@@ -23,6 +23,7 @@ The expansion of urban areas has led to land-use changes that affect aquatic bio
   * **traits_fuzzy.RDS** - fuzzy trait matrix.
   * **trait_composition.RDS** - relative abundance of trait modalities.
   * **traits.xlsx** - raw trait matrix.
+  * **env.xlsx** - raw environmental data.
 
 * /analysis:
   * **functional_metrics.R** - custom ggplot theme.
