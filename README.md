@@ -15,6 +15,7 @@ The expansion of urban areas has led to land-use changes that affect aquatic bio
 &nbsp;
 
 ## R files description:
+* **FdivFunctions.R** - custom functions to calculate functional metrics  by Cayetano Gutiérrez-Cánovas. </br>See Gutiérrez-Cánovas C, Sánchez-Fernández D, Cañedo-Argüelles M, et al (2019) Do all roads lead to Rome? Exploring community trajectories in response to anthropogenic salinization and dilution of rivers. Philos Trans R Soc B Biol Sci 374:20180009.
 
 * /data:
   * **com_hel.RDS** - Hellinger transformed community data.
