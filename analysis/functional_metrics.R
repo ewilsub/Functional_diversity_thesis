@@ -11,7 +11,7 @@ library(vegan)
 
 set.seed(2023)
 
-source('D:/Trabajo/R/FdivFunctions.R')
+source('FdivFunctions.R')
 com_hel <- readRDS('data/com_hel.RDS')
 
 traits_fuzzy <- readRDS('data/traits_fuzzy.RDS')
@@ -145,6 +145,6 @@ ses_results$fdis.ses <- ses.fdis/sd.sim
 
 
 # 5. SAVING RESULTS ----
-saveRDS(ses_results, file = 'results/ses_results.RDS')
+saveRDS(ses_results, file = 'ses_results.RDS')
 
 
