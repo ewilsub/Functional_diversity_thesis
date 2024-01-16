@@ -7,9 +7,9 @@ library(MASS)
 library(MuMIn)
 library(nlme)
 
-ses <- readRDS('results/ses_results.RDS')
+ses <- readRDS('ses_results.RDS')
 env <- readRDS('data/env_log.RDS')
-source('scripts/figures/custom_theme_functional_thesis.R')
+source('figures/custom_theme_functional_thesis.R')
 
 data <- left_join(ses, env, by = 'sample') %>% 
   relocate(c(site, date), .after = sample) %>% 
