@@ -1,20 +1,7 @@
 # Functional diversity of macroinvertebrate communities in urban streams
 
-Code and data to reproduce analyses of the article *title* </br>
+Code and data to reproduce analyses of the study titled *Effects of urbanization-related disturbances on macroinvertebrate communities in a Patagonian river system: insights from a functional approach*, submitted for publication to Urban Ecosystems. </br>
 
-The article explores the effect of urbanization-related changes on the functional diversity and composition of freshwater macroinvertebrate communities in the Esquel-Percy basin (Patagonia, Argentina). 
-&nbsp;
-
-## 👨‍🔬 Original article:
-Please, use this citation to reference the code:
-```
-L. B. Epele, M. G. Grech, E. A. Williams-Subiza, C. Stenert, K. McLean, H. S. Greig, L. Maltchik, M. M. Pires, M. S. Bird, A. Boissezon,
-D. Boix, E. Demierre, P. E. García, S. Gascón, M. Jeffries, J. M. Kneitel, O. Loskutova, L. M. Manzo, G. Mataloni, M. C. Mlambo, B. Oertli,
-J. Sala, E. E. Scheibler, H. Wu, S. A. Wissinger, D. P. Batzer, 
-
-Perils of life on the edge: Climatic threats to global diversity patterns of wetland macroinvertebrates. 
-Sci. Total Environ. 820, 153052 (2022).
-```
 &nbsp;
 
 ## R files description:
