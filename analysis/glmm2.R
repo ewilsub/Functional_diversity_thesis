@@ -9,7 +9,7 @@ library(nlme)
 
 traits <- readRDS('data/trait_composition.RDS')
 env <- readRDS('data/env_log.RDS')
-source('scripts/figures/custom_theme_functional_thesis.R')
+source('figures/custom_theme_functional_thesis.R')
 
 data <- left_join(traits, env, by = c('sample', 'date')) %>% 
   dplyr::select(-site, bod, cond, do, nh4, no3_no2, po4, tss)
