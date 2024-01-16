@@ -22,10 +22,10 @@ The expansion of urban areas has led to land-use changes that affect aquatic bio
   * **traits_fuzzy.RDS** - fuzzy trait matrix.
   * **traits.xlsx** - raw trait matrix.
 * /analysis:
- * **functional_metrics.R** - code to calculate functional metrics and run null models.
- * **glmm1.R** - code to run functional metrics models.
- * **glmm2.R** - code to run trait modalities models.
- * **rlq.R** - code to run rlq and fourth corner analyses.
+  * **functional_metrics.R** - code to calculate functional metrics and run null models.
+  * **glmm1.R** - code to run functional metrics models.
+  * **glmm2.R** - code to run trait modalities models.
+  * **rlq.R** - code to run rlq and fourth corner analyses.
   
 * 0_quality_funct_space_fromdist.R: R function for computing the quality of functional dendrogramm and multidimensional functional spaces. This function is a simplified version of the Appendix S1 associated to Maire et al. 2015 (Global Ecol. and Biogeogr.)
 * 1_FS script_all.R: Main code to reproduce the results presented in the paper
