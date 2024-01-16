@@ -11,7 +11,7 @@ library(patchwork)
 env <- readxl::read_excel('data/env.xlsx')
 env$site <- factor(env$site, levels = c(1:13))
 env <- env %>% filter(!sample == 'v.chico.2')
-source('scripts/figures/custom_theme_functional_thesis.R')
+source('figures/custom_theme_functional_thesis.R')
 
 env_sum <- env %>% group_by(site) %>% 
   summarise_at(c('disc', 'cond', 'do', 'sat', 'tss', 'chlo', 'bod', 'e.coli', 
@@ -150,7 +150,7 @@ design <- 'ABC
 (final <- disc + cond + dox + nh4 + no3_no2 + po4 + bod + tss + plot_layout(design = design))
 
 gg_stop_recording()
-ggsave(final, file = 'figures/env_variables.png', dpi = 320, width = 40, height = 30, units = 'cm')
+ggsave(final, file = 'env_variables.png', dpi = 320, width = 40, height = 30, units = 'cm')
 
 
 
