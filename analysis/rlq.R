@@ -5,7 +5,7 @@ library(ade4)
 library(dplyr)
 library(vegan)
 
-traits <- readxl::read_xlsx('data/com.xlsx', sheet = 'traits')
+traits <- readxl::read_xlsx('data/traits.xlsx', sheet = 1)
 env_log <- readRDS('data/env_log.RDS')
 com_hel <- readRDS('data/com_hel.RDS')
 
@@ -21,7 +21,7 @@ fca <- dudi.fca(traits_fuzzy, scann = F, nf = 2)
 
 #ordinations <- list(coa, pca, fca)
 #names(ordinations) <- c('community', 'environment',  'traits')
-#saveRDS(ordinations, file = 'results/rlq_pre_ordinations.RDS')
+#saveRDS(ordinations, file = 'rlq_pre_ordinations.RDS')
 
 # 5. RLQ ----
 rlq1 <- rlq(pca, coa, fca, scannf = F, nf = 2)
@@ -31,7 +31,7 @@ rlq1 <- rlq(pca, coa, fca, scannf = F, nf = 2)
 #rlq1[["lQ"]]$code <- 1:nrow(rlq1[["lQ"]])
 #rlq.output <- list(rlq1[["l1"]], rlq1[["c1"]], rlq1[["lQ"]], rlq1[["lR"]])
 #names(rlq.output) <- c('env', 'traits', 'spe', 'samples')
-#saveRDS(rlq.output, file = 'results/rlq.RDS')
+#saveRDS(rlq.output, file = 'rlq.RDS')
 
 set.seed(2023)
 randtest(rlq1, modeltype = 6, nrepet = 9999)
