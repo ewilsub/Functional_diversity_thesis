@@ -20,6 +20,7 @@ The expansion of urban areas has led to land-use changes that affect aquatic bio
   * **com_hel.RDS** - Hellinger transformed community data.
   * **env_log.RDS** - log transformed environmental data.
   * **traits_fuzzy.RDS** - fuzzy trait matrix.
+  * **trait_composition.RDS** - relative abundance of trait modalities.
   * **traits.xlsx** - raw trait matrix.
 * /analysis:
   * **functional_metrics.R** - code to calculate functional metrics and run null models.
