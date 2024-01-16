@@ -7,7 +7,7 @@ library(ggplot2)
 library(ggtext)
 library(patchwork)
 
-ses_results <- readRDS('results/ses_results.RDS')
+ses_results <- readRDS('ses_results.RDS')
 
 env <- readRDS('data/env_log.RDS') %>% 
   select(sample, disc, cond, do, bod)
@@ -16,7 +16,7 @@ data <- ses_results %>%
   select(sample, fric.ses, feve.ses, fdis.ses) %>% 
   left_join(env, by = c('sample'))
 
-source('scripts/figures/custom_theme_functional_thesis.R')
+source('figures/custom_theme_functional_thesis.R')
 
 
 
@@ -118,7 +118,7 @@ fric.disc + fric.do + feve.bod + plot_layout(design = design)
 
 
 gg_stop_recording()
-ggsave(file = "figures/glmms1.png", dpi = 320, width = 30, height = 25, units = 'cm')
+ggsave(file = "glmms1.png", dpi = 320, width = 30, height = 25, units = 'cm')
 
 
 
