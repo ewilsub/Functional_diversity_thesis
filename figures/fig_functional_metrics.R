@@ -7,8 +7,8 @@ library(dplyr)
 library(ggplot2)
 library(patchwork)
 
-ses_results <- readRDS('results/ses_results.RDS')
-source('scripts/figures/custom_theme_functional_thesis.R')
+ses_results <- readRDS('ses_results.RDS')
+source('figures/custom_theme_functional_thesis.R')
 
 ses_results <- ses_results %>%
   mutate(site = case_when(
@@ -16,7 +16,7 @@ ses_results <- ses_results %>%
     startsWith(sample, "vialidad") ~ 2,
     startsWith(sample, "toma.de.agua") ~ 3,
     startsWith(sample, "piletones") ~ 4,
-    startsWith(sample, "canalización") ~ 5,
+    startsWith(sample, "canalizaciÃ³n") ~ 5,
     startsWith(sample, "v.chico") ~ 6,
     startsWith(sample, "esquel.v. chico") ~ 7,
     startsWith(sample, "matadero") ~ 8,
@@ -78,7 +78,7 @@ gg_record(device = 'pdf', dpi = 320, width = 25, height = 40, units = 'cm')
 
 gg_stop_recording()
 
-ggsave(finalplot, filename = 'figures/functional_metrics.png',
+ggsave(finalplot, filename = 'functional_metrics.png',
        dpi = 320, width = 25, height = 40, units = 'cm')
 
 
