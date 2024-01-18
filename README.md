@@ -38,6 +38,8 @@ The expansion of urban areas has led to land-use changes that affect aquatic bio
   * **fig_glmm1.R** - code to plot Fig.5.
   * **fig_RLQ.R** - code to plot Fig.6.
   * **fig_glmm2.R** - code to plot Fig.7.
+
+*note: to plot the figures, the scripts inside /analysis must be run first.*
   
 &nbsp;
 
