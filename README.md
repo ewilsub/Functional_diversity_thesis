@@ -1,6 +1,6 @@
 # Functional diversity of macroinvertebrate communities in urban streams
 
-Code and data to reproduce analyses of the study titled *Effects of urbanization-related disturbances on macroinvertebrate communities in a Patagonian river system: insights from a functional approach*, submitted for publication to Urban Ecosystems. </br> 
+Code and data to reproduce analyses of the study titled *Effects of urbanization-related disturbances on macroinvertebrate communities in a Patagonian river system: insights from a functional approach*, published in Urban Ecosystems (2024). </br> 
 
 
 This research was part of my PhD thesis *Efectos de la expansión urbana sobre la integridad ecológica de una cuenca patagónica
